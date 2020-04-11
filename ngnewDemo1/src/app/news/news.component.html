@@ -1,0 +1,19 @@
+<div title="我是一个HTML标签">
+    张三
+</div>
+<div [title]="content">
+    李氏
+</div>
+<div [innerHTML]="ihtml">
+    王五
+</div>
+
+<hr/>
+<ul *ngFor="let item of items;let i = index;">
+    <li>{{i}}: {{item}}</li>
+</ul>
+
+<hr/>
+
+<p style="color: red">p标签 red</p>
+<p [ngStyle]="{'color':'red'}">p标签 red</p>
